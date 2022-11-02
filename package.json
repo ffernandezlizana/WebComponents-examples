@@ -1,0 +1,41 @@
+{
+  "name": "webcomponents-sample",
+  "version": "1.0.0",
+  "description": "Webcomponents sample",
+  "main": "./dist/index.js",
+  "scripts": {
+    "lint:fix": "eslint ./src --fix",
+    "lint": "node_modules/.bin/eslint --quiet ./",
+    "lint-warnings": "node_modules/.bin/eslint ./ --format table",
+    "start": "gulp serve",
+    "build": "gulp build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://git.paradigmadigital.com/ffernandez/webcomponents-examples.git"
+  },
+  "author": "Fernando Fernández y Sergio Casado",
+  "files": [
+    "dist/"
+  ],
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "autoprefixer": "^7.2.5",
+    "browser-sync": "^2.23.6",
+    "del": "^3.0.0",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.1.0",
+    "eslint-plugin-import": "^2.20.2",
+    "gulp": "^4.0.0",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-postcss": "^7.0.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-replace": "^1.0.0",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-stylelint": "^6.0.0",
+    "gulp-uglify": "^3.0.0",
+    "stylelint": "^8.4.0",
+    "uglify-es": "^3.3.9"
+  }
+}

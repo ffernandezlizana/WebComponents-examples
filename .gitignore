@@ -1,0 +1,25 @@
+# NPM
+node_modules
+npm-debug.log
+
+# Code Editor Settings
+.idea
+.vs
+.settings/
+.classpath
+.project
+.env
+
+dist/
+coverage
+
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties

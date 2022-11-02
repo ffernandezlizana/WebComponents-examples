@@ -1,0 +1,18 @@
+{
+    "rules": {
+        "declaration-block-trailing-semicolon" : "always",
+        "color-hex-case": "lower",
+        "selector-type-case" :  "lower",
+        "number-leading-zero" : "always",
+        "string-quotes" : "single",
+        "declaration-colon-space-before": "never",
+        "declaration-colon-space-after": "never",
+        "selector-combinator-space-before": "always",
+        "selector-combinator-space-after": "always",
+        "block-opening-brace-space-before": "always",
+        "selector-list-comma-space-after": "always",
+        "block-closing-brace-space-before": "never",
+        "no-eol-whitespace": true,
+        "length-zero-no-unit": true,
+    }
+}

@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="es">
+<meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<title>Webcomponents Sample</title>
+<link rel="shortcut icon" href="https://www.paradigmadigital.com/assets/img/logo/favicon.png" type="image/x-icon" />
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+<meta http-equiv="Pragma" content="no-cache" />
+<meta http-equiv="Expires" content="0" />
+<style>
+    .grid-container {display: grid; grid-template-columns: repeat(2, auto); margin: 0px 35%;}
+    p {font-weight: bold;}
+    h1 {text-align: center;}
+</style>
+</head>
+
+<body>
+    
+    <h1>Ejemplos de uso de Webcomponents</h1>
+    
+    <div class="grid-container">
+        <p>Tag con componente sin herencia</p>
+        <my-tag text="Hola"></my-tag>
+    </div>
+
+    <div class="grid-container">
+        <p>Otro tag con componente sin herencia</p>
+        <my-tag text="Adios"></my-tag>
+    </div>
+
+    <div class="grid-container">
+        <p>Button con componente con herencia</p>
+        <my-button-extend-schema text="Hola"></my-button-extend-schema>
+    </div>
+
+    <div class="grid-container">
+        <p>Otro Button con componente con herencia</p>
+        <my-button-extend-schema text="Adios"></my-button-extend-schema>
+    </div>
+
+    <div class="grid-container">
+        <p>Tag con componente con herencia</p>
+        <my-tag-extend-schema text="Hola"></my-tag-extend-schema>
+    </div>
+
+    <div class="grid-container">
+        <p>Otro tag con componente con herencia</p>
+        <my-tag-extend-schema text="Adios"></my-tag-extend-schema>
+    </div>
+
+    <script type='module'>
+        import { MyTag, MyButtonExtendSchema, MyTagExtendSchema } from './index.js';
+        window.customElements.define('my-tag', MyTag);
+        window.customElements.define('my-button-extend-schema', MyButtonExtendSchema);
+        window.customElements.define('my-tag-extend-schema', MyTagExtendSchema);
+    </script>
+</body>
+
+</html>
